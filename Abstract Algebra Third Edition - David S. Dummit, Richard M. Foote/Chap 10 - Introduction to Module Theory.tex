@@ -1,0 +1,243 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,enumerate,xcolor,theorem}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\textdots}{...}
+\newcommand{\tmcolor}[2]{{\color{#1}{#2}}}
+\newcommand{\tmdummy}{$\mbox{}$}
+\newcommand{\tmem}[1]{{\em #1\/}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmverbatim}[1]{\text{{\ttfamily{#1}}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+\newenvironment{enumerateroman}{\begin{enumerate}[i.] }{\end{enumerate}}
+\newenvironment{tmindent}{\begin{tmparmod}{1.5em}{0pt}{0pt}}{\end{tmparmod}}
+\newenvironment{tmparmod}[3]{\begin{list}{}{\setlength{\topsep}{0pt}\setlength{\leftmargin}{#1}\setlength{\rightmargin}{#2}\setlength{\parindent}{#3}\setlength{\listparindent}{\parindent}\setlength{\itemindent}{\parindent}\setlength{\parsep}{\parskip}} \item[]}{\end{list}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\begin{document}
+
+\section*{10 Introduction to Module Theory}
+
+\subsection*{10.1 Basic Definitions and Examples}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    $M$ is a additive group.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    The statement holds by definition.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Assume $r$ has a right inverse $r^{- 1}$, then $m = r^{- 1} rm = 0$,
+    contradictory.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Just check the definition of submodules or use {\tmem{The Submodule
+    Criterion}} in {\tmem{Proposition 10.1.1}}., trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Use {\tmem{The Submodule Criterion}} in {\tmem{Proposition 10.1.1}},
+    trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Use {\tmem{The Submodule Criterion}} in {\tmem{Proposition 10.1.1}},
+    trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    $\bigcup_{k = 1}^{\infty} N_k \neq \varnothing$ for sure. $\forall x, y
+    \in \bigcup_{k = 1}^{\infty} N_k, \exists \mathcal{N} \in \mathbb{Z}^+, x,
+    y \in \bigcup_{k = 1}^{\mathcal{N}} N_k = N_{\mathcal{N}}$. Therefore
+    $\forall r \in R, x + ry \in N_{\mathcal{N}} \subseteq \bigcup_{k =
+    1}^{\infty} N_k$.{\hspace*{\fill}}$Q.E.D.$
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item $0 \in \tmop{Tor} (M)$, so $\tmop{Tor} (M) \neq \varnothing$. Let
+    $x, y \in \tmop{Tor} (M), r_1 x = r_2 y = 0$. Then we have
+    \[ r_1 r_2  (x + ry) = 0, r_1 r_2 \neq 0 \]
+    So $\tmop{Tor} (M)$ is a submodule of $M$.{\hspace*{\fill}}$Q.E.D.$
+    
+    \item Consider $\mathbb{Z}_6$-module $\mathbb{Z}_6$. $2 \times 3 = 3
+    \times 2 = 0$, so $2, 3 \in \tmop{Tor} (\mathbb{Z}_6)$. But $2 + 3 = 5
+    \notin \tmop{Tor} (\mathbb{Z}_6)$.
+    
+    \item Trivial{\textdots}Suppose nonzero elements $r_1, r_2 \in R, r_1 r_2
+    = 0$. For any nonzero $R$-module $M$ and its nonzero element $m \in M$, if
+    $r_1 m = 0, m \in \tmop{Tor} (M)$. Otherwise we have $r_2  (r_1 m) = 0$,
+    so the nonzero element $r_1 m \in \tmop{Tor} (M)$.
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  \tmverbatim{Trivial}
+\end{exercise}
+
+\begin{exercise}
+  \tmverbatim{Trivial}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item $\tmop{lcm} (24, 15, 50) = 600$. So it's $(600)$.
+    
+    \item $\{ 0, 12 \} \times \{ 0 \} \times \{ 0, 25 \}$
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item
+    \begin{enumerateroman}
+      \item Trivial.
+      
+      \item Let $M = \mathbb{Z} / 12 \mathbb{Z} \times \mathbb{Z} / 12
+      \mathbb{Z}, R = \mathbb{Z}, N = \{ 0, 3, 6, 9 \} \times \{ 0 \}$. In
+      this case, $\tmop{Ann} (N) = (4), \tmop{Ann} (4) = \{ 0, 3, 6, 9 \}
+      \times \{ 0, 3, 6, 9 \}$.
+    \end{enumerateroman}
+    \item
+    \begin{enumerateroman}
+      \item Trivial.
+      
+      \item Let $R = \mathbb{Z}, M = \mathbb{Z} / 12 \mathbb{Z}, I = (8)$. Now
+      $\tmop{Ann} (I) = (0, 3, 6, 9), \tmop{Ann} (\tmop{Ann} (I)) = (4)
+      \supseteq I$.
+    \end{enumerateroman}
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Use {\tmem{The Submodule Criterion}} in {\tmem{Proposition 10.1.1}},
+    trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Use {\tmem{The Submodule Criterion}} in {\tmem{Proposition 10.1.1}},
+    trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    No, because $M$ might not be able to be factored.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  \tmverbatim{\tmcolor{red}{I don't understand this problem.}}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    It's because the eigenvector of $\left[\begin{array}{cc}
+      0 & 1\\
+      - 1 & 0
+    \end{array}\right]$ are NOT in $\mathbb{R}^{2 \times 2}$, trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Find out the eigenvector of $\left[\begin{array}{cc}
+      0 & 0\\
+      0 & 1
+    \end{array}\right]$ and the proof is trivial.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    \ 
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    \ 
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    \ 
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    \ 
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    \ 
+  \end{tmindent}
+\end{exercise}
+
+\end{document}
