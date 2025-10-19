@@ -543,6 +543,78 @@
       <math|<around*|[|1,+\<infty\>|)>>.
     </enumerate-roman>
   </problem*>
+
+  <section*|Section 4.6>
+
+  <\problem*>
+    <strong|40>
+
+    <\enumerate-roman>
+      <item><math|\<forall\>x\<in\><with|font|Bbb|R>,<big|int><rsub|-\<infty\>><rsup|x><around*|\||f<around*|(|x|)>|\|>*\<mathd\>m\<leqslant\><big|int><rsub|-\<infty\>><rsup|+\<infty\>><around*|\||f<around*|(|x|)>|\|>*\<mathd\>m\<less\>\<infty\>>,
+      so <math|f<around*|(|x|)>> is integrable over
+      <math|<around*|(|-\<infty\>,x|)>> and <math|F<around*|(|x|)>> is
+      properly defined. Also, by <em|Proposition 5.1.2> we know
+
+      <\equation*>
+        \<forall\>\<varepsilon\>\<gtr\>0,\<exists\>\<delta\>\<gtr\>0,s.t.\<forall\>x\<in\><with|font|Bbb|R>,<around*|\||<big|int><rsub|-\<infty\>><rsup|x>f<around*|(|x|)>*\<mathd\>m-<big|int><rsub|-\<infty\>><rsup|x-\<delta\>>f<around*|(|x|)>*\<mathd\>m|\|>=<around*|\||<big|int><rsub|x-\<delta\>><rsup|x>f<around*|(|x|)>*\<mathd\>m|\|>\<less\><big|int><rsub|x-\<delta\>><rsup|x><around*|\||f<around*|(|x|)>|\|>*\<mathd\>m\<less\>\<varepsilon\>
+      </equation*>
+
+      Hence <math|f> is <strong|uniformly> continuous in
+      <math|<with|font|Bbb|R>>.
+
+      <item>No.
+
+      Counterexample: let <math|f> be a even function such that
+
+      <\equation*>
+        f<around*|(|x|)>=<choice|<tformat|<table|<row|<cell|<frac|1|x<rsup|1/2>>,x\<in\><around*|(|0,1|]>>>|<row|<cell|<frac|1|<around*|(|1-x|)><rsup|1/2>>,x\<in\><around*|(|1,2|]>>>|<row|<cell|<frac|1|2>*<frac|1|x<rsup|1/2>>,x\<in\><around*|(|2,3|]>>>|<row|<cell|<frac|1|2>*<frac|1|<around*|(|1-x|)><rsup|1/2>>,x\<in\><around*|(|3,4|]>>>|<row|<cell|\<vdots\>>>|<row|<cell|<frac|1|2<rsup|k-1>>*<frac|1|x<rsup|1/2>>,x\<in\><around*|(|2*k-2,2*k-1|]>>>|<row|<cell|<frac|1|2<rsup|k-1>>*<frac|1|<around*|(|1-x|)><rsup|1/2>>,x\<in\><around*|(|2*k-1,2*k|]>>>>>>
+      </equation*>
+
+      which satisfy the condition in the problem. But when
+      <math|x\<in\><around*|(|0,1|]>,<big|int>f<around*|(|x|)>*d
+      x=2*<sqrt|x>>. Hence in <math|<around*|[|-1,1|]>>, let
+      <math|C=<big|int><rsub|-\<infty\>><rsup|-1>f*\<mathd\>m> and
+      <math|f<around*|(|x|)>=C+2*<sqrt|<around*|\||x|\|>>> is not Lipschitz.
+    </enumerate-roman>
+  </problem*>
+
+  <\problem*>
+    <strong|41>
+
+    \;
+  </problem*>
+
+  <\problem*>
+    <strong|42>
+  </problem*>
+
+  <\problem*>
+    <strong|44>
+  </problem*>
+
+  <\problem*>
+    <strong|45>
+  </problem*>
+
+  <\problem*>
+    <strong|46>
+  </problem*>
+
+  <\problem*>
+    <strong|47>
+  </problem*>
+
+  <\problem*>
+    <strong|48>
+  </problem*>
+
+  <\problem*>
+    <strong|49>
+  </problem*>
+
+  <\problem*>
+    <strong|50>
+  </problem*>
 </body>
 
 <\initial>
@@ -557,38 +629,35 @@
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
     <associate|auto-3|<tuple|?|1>>
-    <associate|auto-4|<tuple|ii|1>>
-    <associate|auto-5|<tuple|ii|3>>
-    <associate|auto-6|<tuple|ii|5>>
+    <associate|auto-4|<tuple|ii|3>>
+    <associate|auto-5|<tuple|ii|5>>
+    <associate|auto-6|<tuple|iii|?>>
+    <associate|auto-7|<tuple|1|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|<htab|5mm>Assignment
-      5<htab|5mm>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-1><vspace|1fn>
-
       <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Chapter
       4 - Lebesgue Integration> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|1fn>
+      <no-break><pageref|auto-1><vspace|1fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Section
       4.2> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.5fn>
+      <no-break><pageref|auto-2><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Section
       4.3> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4><vspace|0.5fn>
+      <no-break><pageref|auto-3><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Section
       4.4> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5><vspace|0.5fn>
+      <no-break><pageref|auto-4><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Section
       4.5> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
+      <no-break><pageref|auto-5><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
