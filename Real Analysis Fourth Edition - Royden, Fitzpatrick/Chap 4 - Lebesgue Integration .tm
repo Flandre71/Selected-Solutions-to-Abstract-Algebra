@@ -105,7 +105,8 @@
   </problem*>
 
   <\problem*>
-    <strong|21>
+    <strong|21> <verbatim|Not sure, I don't think I've used the conditionn
+    "closed" in ii)>
 
     <\enumerate-roman>
       <item>Since <math|f> is integrable, there exist a sufficiently large
@@ -128,9 +129,8 @@
         m\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>
       </equation*>
 
-      <item>When <math|E> is a closed bounded function: By <em|Lusin's
-      theorem>, <math|\<exists\>closed set
-      F\<subseteq\>E<rprime|'>,continuous function
+      <item>When <math|E> is a closed bounded set: By <em|Lusin's theorem>,
+      <math|\<exists\>closed set F\<subseteq\>E<rprime|'>,continuous function
       g:<with|font|Bbb|R>\<rightarrow\><with|font|Bbb|R>,s.t\<point\>g=f on
       F,m<around*|{|E<rprime|'>\\F|}>\<less\><frac|\<varepsilon\>|8*M>>. Now
       <math|g> is a continuous function on a bounded closed set, so it is
@@ -581,23 +581,67 @@
   <\problem*>
     <strong|41>
 
-    \;
+    <\indent>
+      Counterexample: Let <math|f<rsub|n><around*|(|x|)>=<with|font|cal|X><rsub|<around*|[|n-1,n|]>>>.
+    </indent>
   </problem*>
 
   <\problem*>
     <strong|42>
+
+    <\indent>
+      Counterexample: Let <math|f<rsub|n><around*|(|x|)>=<with|font|cal|X><rsub|<around*|[|0,<frac|1|n>|]>>-<with|font|cal|X><rsub|<around*|[|1-<frac|1|n>,1|]>>>.
+    </indent>
   </problem*>
 
   <\problem*>
     <strong|44>
+
+    <\enumerate-roman>
+      <item>When <math|f> is nonnegative, it is the case in <strong|Problem.
+      4.4.21 i)> and we're done. In the general case, just split <math|f>
+      into <math|f<rsub|+>,f<rsub|->> and use previous result.
+
+      <item>Let <math|f<rsub|n>=f*<with|font|cal|X><rsub|<around*|[|-n,n|]>>>.
+      By have <math|n> sufficiently large we can have
+      <math|<big|int><rsub|<with|font|Bbb|R>><around*|\||f-f<rsub|n>|\|>*\<mathd\>m\<less\><frac|\<varepsilon\>|2>>.
+      By <strong|Problem. 4.4.21 ii)> and refering to the generalization
+      method above we can obtian the required step function
+      <math|\<eta\>,s.t.<big|int><rsub|<around*|[|-n,n|]>><around*|\||f-\<eta\>|\|>*\<mathd\>m\<less\><frac|\<varepsilon\>|2>>.
+      So
+
+      <\equation*>
+        <big|int><rsub|<with|font|Bbb|R>><around*|\||f-\<eta\>|\|>*\<mathd\>m\<leqslant\><big|int><rsub|<with|font|Bbb|R>><around*|\||f-f<rsub|n>|\|>*\<mathd\>m+<big|int><rsub|<with|font|Bbb|R>><around*|\||f<rsub|n>-\<eta\>|\|>*\<mathd\>m=<big|int><rsub|<with|font|Bbb|R>><around*|\||f-f<rsub|n>|\|>*\<mathd\>m+<big|int><rsub|<around*|[|-n,n|]>><around*|\||f<rsub|n>-\<eta\>|\|>*\<mathd\>m\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>
+      </equation*>
+
+      <item>Similar to <em|ii)>, we can prove this by approximating <math|f>
+      by <math|f<rsub|n>> and then applying <em|Lusin's Theorem> with
+      <em|Proposition 5.1.2>.
+    </enumerate-roman>
   </problem*>
 
   <\problem*>
     <strong|45>
+
+    <\enumerate-roman>
+      <item>We only have to prove the case of <math|f> being nonnegative:\ 
+
+      When <math|f> is nonnegative, its integral was defined by the supremum
+      of integrals of bounded, finitely supported, measurable functions,
+      whose integrals was defined by the supremum and infimum of finitely
+      supported simple functions, which can be extended to
+      <math|<with|font|Bbb|R>> ,by being vanished out of <math|E>, and
+      integral remain unchanged.
+
+      <item>We can obtain the proof by simply combining <em|i)> together with
+      <strong|Problem. 44 ii) & iii)>.
+    </enumerate-roman>
   </problem*>
 
   <\problem*>
     <strong|46>
+
+    \;
   </problem*>
 
   <\problem*>
@@ -631,8 +675,7 @@
     <associate|auto-3|<tuple|?|1>>
     <associate|auto-4|<tuple|ii|3>>
     <associate|auto-5|<tuple|ii|5>>
-    <associate|auto-6|<tuple|iii|?>>
-    <associate|auto-7|<tuple|1|?>>
+    <associate|auto-6|<tuple|iii|5>>
   </collection>
 </references>
 
@@ -658,6 +701,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Section
       4.5> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Section
+      4.6> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
