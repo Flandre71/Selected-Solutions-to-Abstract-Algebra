@@ -595,7 +595,8 @@
   </problem*>
 
   <\problem*>
-    <strong|44>
+    <strong|44> <verbatim|(If f was given bounded, i) can be easily proved by
+    using the defnition of Lebesgue integral of bounded functions.)>
 
     <\enumerate-roman>
       <item>When <math|f> is nonnegative, it is the case in <strong|Problem.
@@ -634,30 +635,180 @@
       integral remain unchanged.
 
       <item>We can obtain the proof by simply combining <em|i)> together with
-      <strong|Problem. 44 ii) & iii)>.
+      <strong|Problem. 44 <em|ii)> & <em|iii)>>.
     </enumerate-roman>
   </problem*>
 
   <\problem*>
     <strong|46>
 
-    \;
+    <\indent>
+      We follow from the hint: When <math|f> is a step function, suppose its
+      step value is <math|c<rsub|1>,c<rsub|2>,\<ldots\>,c<rsub|n>>.
+
+      <\equation*>
+        lim<rsub|n\<rightarrow\>\<infty\>><big|int><rsub|-\<infty\>><rsup|+\<infty\>>f<around*|(|x|)>*cos<around*|(|n*x|)>*\<mathd\>x=lim<rsub|n\<rightarrow\>\<infty\>><around*|(|<big|sum><rsub|k=1><rsup|n>c<rsub|k>*m<around*|(|<around*|{|x\|f<around*|(|x|)>=c<rsub|k>|}>|)>*cos<around*|(|n*x|)>|)>=0
+      </equation*>
+
+      Now, by <strong|Problem.44 <em|ii)>>, for any <math|f> there exist a
+      step-function <math|s> on <math|<with|font|Bbb|R>> which vanish outside
+      a closed, bounded interval such that
+      <math|<big|int><rsub|<with|font|Bbb|R>><around*|\||f-s|\|>*\<mathd\>m\<less\>\<varepsilon\>>
+      for <math|\<forall\>\<varepsilon\>\<gtr\>0>. And we can see
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\||lim<rsub|n\<rightarrow\>\<infty\>><big|int><rsub|-\<infty\>><rsup|+\<infty\>>f<around*|(|x|)>*cos<around*|(|n*x|)>*\<mathd\>x|\|>>|<cell|=>|<cell|<around*|\||lim<rsub|n\<rightarrow\>\<infty\>><big|int><rsub|-\<infty\>><rsup|+\<infty\>><around*|(|f<around*|(|x|)>-s<around*|(|x|)>|)>*cos<around*|(|n*x|)>*\<mathd\>x|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|lim<rsub|n\<rightarrow\>\<infty\>><big|int><rsub|-\<infty\>><rsup|+\<infty\>><around*|\||<around*|\<nobracket\>|f<around*|(|x|)>-s<around*|(|x|\<nobracket\>>|)>|\|>*<around*|\||cos<around*|(|n*x|)>|\|>*\<mathd\>x>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|lim<rsub|n\<rightarrow\>\<infty\>><big|int><rsub|-\<infty\>><rsup|+\<infty\>><around*|\||<around*|\<nobracket\>|f<around*|(|x|)>-s<around*|(|x|\<nobracket\>>|)>|\|>*\<mathd\>x>>|<row|<cell|>|<cell|\<less\>>|<cell|\<varepsilon\>>>>>
+      </eqnarray*>
+
+      Since <math|\<varepsilon\>> is a arbitarily given positive real number,
+      we know the limit above converge to <math|0>.<htab|5mm><qed>
+    </indent>
   </problem*>
 
   <\problem*>
     <strong|47>
+
+    <\enumerate-roman>
+      <item>We can prove it by recalling the definition of integral of
+      nonnegative function <math|f> on set of infinite measure and show the
+      bounded, finitely supported, measurable function used to approximate
+      <math|f> have the same integral by translation.
+
+      <item><verbatim|(I've thinked of a way not following the hint, but I
+      suppose their essence are both Lusin's theorem)>
+
+      <verbatim|(POSTSCRIPT: I just proved Problem 4.6.44 again, making
+      wheels<text-dots>So this method is the same as the one hinted.)>
+
+      Suppose <math|<around*|\||g<around*|(|x|)>|\|>\<less\>M>. Since we can
+      approximate the general case by having a sequence of interval
+      <math|I<rsub|n>=<around*|[|-n,n|]>> and the integral outside those
+      intervals can be arbitarily close to <math|0>, w.l.o.g. we can just
+      consider the case of integral on a bounded set <math|E>:
+
+      We consider <em|Lusin's theorem> and obtian a continuous function
+      <math|\<varphi\>:<with|font|Bbb|R>\<longrightarrow\><with|font|Bbb|R>>
+      and a closed subset <math|F\<subseteq\>E> such that
+      <math|m<around*|(|E\\F|)>\<less\>\<varepsilon\>,f=\<varphi\>> on
+      <math|F> for <math|\<forall\>\<varepsilon\>\<gtr\>0>. Such continuous
+      function <math|\<varphi\>> on closed bounded set <math|F> is uniformly
+      continuous, and <math|\<forall\>\<varepsilon\><rsub|0>\<gtr\>0,\<exists\>\<delta\>\<gtr\>0,s.t.\<forall\>x,y\<in\>F,<around*|\||x-y|\|>\<less\>\<delta\>,<around*|\||f<around*|(|x|)>-f<around*|(|y|)>|\|>=<around*|\||\<varphi\><around*|(|x|)>-\<varphi\><around*|(|y|)>|\|>\<less\>\<varepsilon\><rsub|0>>.
+      Also, by <em|Proposition 5.1.2>, we can choose a proper
+      <math|\<varepsilon\>> so that <math|<big|int><rsub|E\\F><around*|\||f<around*|(|x|)>|\|>*\<mathd\>m\<less\>\<varepsilon\><rsub|1>>
+      and <math|f> can be vanished outside <math|F>. Therefore <math|f> is
+      uniformly continuous over <math|E> and for
+      <math|t\<in\><around*|(|0,\<delta\>|)>> we have
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\||<big|int><rsub|E>g<around*|(|x|)>*<around*|(|f<around*|(|x|)>-f<around*|(|x+t|)>|)>*\<mathd\>m|\|>>|<cell|\<leqslant\>>|<cell|<around*|\||<big|int><rsub|E\\F>g<around*|(|x|)>*<around*|(|f<around*|(|x|)>-f<around*|(|x+t|)>|)>*\<mathd\>m|\|>+<around*|\||<big|int><rsub|F>g<around*|(|x|)>*<around*|(|f<around*|(|x|)>-f<around*|(|x+t|)>|)>*\<mathd\>m|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|int><rsub|E\\F><around*|\||g<around*|(|x|)>|\|>*<around*|(|<around*|\||f<around*|(|x|)>|\|>+<around*|\||f<around*|(|x+t|\<nobracket\>>|\|>|)>*\<mathd\>m+\<varepsilon\><rsub|0>*<around*|\||<big|int><rsub|F>g<around*|(|x|)>*\<mathd\>m|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|M*2*\<varepsilon\><rsub|1>+M*\<varepsilon\><rsub|0>>>>>
+      </eqnarray*>
+
+      Since <math|\<varepsilon\><rsub|0>> was chosen aritarily and
+      <math|\<varepsilon\><rsub|1>> can be arbitarily close to <math|0> by
+      chosing <math|\<varepsilon\>> properly, we obtian
+
+      <\equation*>
+        lim<rsub|t\<rightarrow\>0><around*|\||<big|int><rsub|E>g<around*|(|x|)>*<around*|(|f<around*|(|x|)>-f<around*|(|x+t|)>|)>*\<mathd\>m|\|>=0
+      </equation*>
+
+      <htab|5mm><qed>
+    </enumerate-roman>
   </problem*>
 
   <\problem*>
     <strong|48>
+
+    <\indent>
+      Since <math|f,g> are measurable, <math|f*g> is measurable. To prove
+      <math|f*g> is integrable over <math|E>, we need to prove
+      <math|<around*|\||f*g|\|>> is integrable. Therefore we may only
+      consider the case when <math|f> and <math|g> are both nonnegative.
+
+      Let <math|0\<less\>g<around*|(|x|)>\<less\>M> as <math|g> is bounded.
+      Recall the definition of integrability of nonnegetive measurable
+      function and we can see
+
+      <\equation*>
+        <big|int><rsub|E>f*g*\<mathd\>m\<leqslant\>M*<big|int><rsub|E>f*\<mathd\>m\<less\>\<infty\>
+      </equation*>
+
+      So <math|f*g> is integrable.<htab|5mm><qed>
+    </indent>
   </problem*>
 
   <\problem*>
     <strong|49>
+
+    <\indent>
+      <em|(i)><math|\<Rightarrow\>><em|(iii)>:\ 
+
+      <\indent>
+        Let <math|E=<around*|{|x\|f<around*|(|x|)>=0|}>,E<rsub|0>=E\<cap\>A>.
+        We can see
+
+        <\equation*>
+          <big|int><rsub|A>f*\<mathd\>m=<big|int><rsub|E<rsub|0>>f*\<mathd\>m+<big|int><rsub|A\\E<rsub|0>>f*\<mathd\>m=0+0=0
+        </equation*>
+      </indent>
+
+      <em|(iii)><math|\<Rightarrow\>><em|(iv)>:\ 
+
+      <\indent>
+        An open set is measurable.
+      </indent>
+
+      <em|(iv)><math|\<Rightarrow\>><em|(ii)>:\ 
+
+      <\indent>
+        Let <math|<around*|\||g<around*|(|x|)>|\|>\<less\>M>. Notice
+        <math|<with|font|Bbb|R>> is a open set, therefore we'll obtain
+
+        <\equation*>
+          <around*|\||<big|int><rsub|<with|font|Bbb|R>>f*g*\<mathd\>m|\|>\<leqslant\>M*<around*|\||<big|int><rsub|<with|font|Bbb|R>>f*\<mathd\>m|\|>=M*0=0
+        </equation*>
+      </indent>
+
+      <em|(ii)><math|\<Rightarrow\>><em|(i)>:\ 
+
+      <\indent>
+        We let <math|g> satisfy
+
+        <\equation*>
+          g<around*|(|x|)>=<choice|<tformat|<table|<row|<cell|1,f<around*|(|x|)>\<geqslant\>0>>|<row|<cell|-1,f<around*|(|x|)>\<less\>0>>>>>
+        </equation*>
+
+        Now by <em|(ii)>, <math|<big|int><rsub|<with|font|Bbb|R>><around*|\||f|\|>*\<mathd\>m=0>.
+        Therefore we can obtain the proof by <strong|Proposition 4.3.9>.
+      </indent>
+
+      \;
+    </indent>
   </problem*>
 
   <\problem*>
     <strong|50>
+
+    <\enumerate-roman>
+      <item>When <math|<with|font|cal|F>> is uniformly integrable, by
+      definition we can choose a proper <math|\<delta\>> and obtain
+
+      <\equation*>
+        <around*|\||<big|int><rsub|A>f*\<mathd\>m|\|>\<leqslant\><big|int><rsub|A><around*|\||f|\|>*\<mathd\>m\<less\>\<varepsilon\>
+      </equation*>
+
+      <item>On the other hand: For <math|f\<in\><with|font|cal|F>>, define
+      <math|E<rsub|f><rsup|+>=<around*|{|x\|f<around*|(|x|)>\<geqslant\>0|}>,E<rsub|f><rsup|->=<around*|{|x\|f<around*|(|x|)>\<less\>0|}>>.
+      We let <math|\<delta\>> satisfy: for any measurable set <math|A>, if
+      <math|m<around*|(|A|)>\<less\>\<delta\>>, then
+      <math|<around*|\||<big|int><rsub|A>f*\<mathd\>m|\|>\<less\>\<varepsilon\>/2>.
+      Now we can see
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int><rsub|A><around*|\||f|\|>*\<mathd\>m>|<cell|=>|<cell|<big|int><rsub|A\<cap\>E<rsub|f><rsup|+>>f*\<mathd\>m+<big|int><rsub|A\<cap\>E<rsub|f><rsup|->><around*|(|-f|)>*\<mathd\>m>>|<row|<cell|>|<cell|=>|<cell|<around*|\||<big|int><rsub|A\<cap\>E<rsub|f><rsup|+>>f*\<mathd\>m|\|>+<around*|\||<big|int><rsub|A\<cap\>E<rsub|f><rsup|->>f*\<mathd\>m|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<around*|\||<big|int><rsub|A>f*\<mathd\>m|\|>+<around*|\||<big|int><rsub|A>f*\<mathd\>m|\|>>>|<row|<cell|>|<cell|\<less\>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|=>|<cell|\<varepsilon\>>>>>
+      </eqnarray*>
+
+      <htab|5mm><qed>
+    </enumerate-roman>
   </problem*>
 </body>
 
