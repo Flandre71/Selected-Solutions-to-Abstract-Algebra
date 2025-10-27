@@ -174,6 +174,14 @@
     \;
 
     <\indent>
+      \;
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
       It's because the eigenvector of <math|<bmatrix|<tformat|<table|<row|<cell|0>|<cell|1>>|<row|<cell|-1>|<cell|0>>>>>>
       are NOT in <math|<with|font|Bbb|R><rsup|2\<times\>2>>, trivial.
     </indent>
@@ -185,14 +193,6 @@
     <\indent>
       Find out the eigenvector of <math|<bmatrix|<tformat|<table|<row|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|1>>>>>>
       and the proof is trivial.
-    </indent>
-  </exercise>
-
-  <\exercise>
-    \;
-
-    <\indent>
-      \;
     </indent>
   </exercise>
 
