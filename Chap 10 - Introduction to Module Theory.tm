@@ -165,16 +165,23 @@
   </exercise>
 
   <\exercise>
-    <verbatim|<\with|color|red>
-      I don't understand this problem.
-    </with>>
+    \;
+
+    <\indent>
+      On one hand, all of those submodules <math|U<rsub|k>> are invariant
+      under shift operators. On the other hand, it's easy to see that those
+      submodules, which are not in the format of <math|U<rsub|k>> and has
+      <math|0> at \Pfront\Q, is not shift-invariant.
+    </indent>
   </exercise>
 
   <\exercise>
     \;
 
     <\indent>
-      \;
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|(|a<rsub|m>*x<rsup|m>+a<rsub|m-1>*x<rsup|m-1>+\<cdots\>+a<rsub|0>|)>*e<rsub|n>>|<cell|=>|<cell|<around*|(|a<rsub|m>*T<rsup|m>+a<rsub|m-1>*T<rsup|m-1>+\<cdots\>+a<rsub|0>|)>*e<rsub|n>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|n-1>*T<rsup|n-1>*e<rsub|1>+a<rsub|n-2>*T<rsup|n-2>*e<rsub|2>+\<cdots\>+a<rsub|0>*e<rsub|n>>>>>
+      </eqnarray*>
     </indent>
   </exercise>
 
@@ -200,7 +207,11 @@
     \;
 
     <\indent>
-      \;
+      <math|T>, under the usual basis vector, correspond to
+      <math|<bmatrix|<tformat|<table|<row|<cell|-1>|<cell|0>>|<row|<cell|0>|<cell|-1>>>>>>
+      and has <math|V=<with|font|Bbb|R><rsup|2>> as their eigenvectors. So
+      every subspace of <math|V> is <math|T>-invariant, therefore be a
+      <math|F<around*|[|x|]>>-submodule of <math|T>.
     </indent>
   </exercise>
 
@@ -208,16 +219,19 @@
     \;
 
     <\indent>
-      \;
+      It's because <math|R\<times\>M\<rightarrow\>M,M\<times\>R\<nrightarrow\>M>.
     </indent>
   </exercise>
 
   <\exercise>
     \;
 
-    <\indent>
-      \;
-    </indent>
+    <\enumerate-roman>
+      <item><math|\<forall\>a\<in\>A,f<around*|(|1<rsub|R>|)>*a=1<rsub|R>*<around*|(|1<rsub|A>*a|)>=a>,
+      so <math|f<around*|(|1<rsub|R>|)>=1<rsub|A>>
+
+      <item><math|f<around*|(|r|)>*a=r*1<rsub|A>*a=r*a*1<rsub|A>=a*<around*|(|r*1<rsub|A>|)>=a*f<around*|(|r|)>>
+    </enumerate-roman>
   </exercise>
 
   <\exercise>
