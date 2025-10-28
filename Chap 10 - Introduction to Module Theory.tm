@@ -235,11 +235,21 @@
   </exercise>
 
   <\exercise>
-    \;
+    <verbatim|I dont't understand b)c)>
 
-    <\indent>
-      \;
-    </indent>
+    <\enumerate-alpha>
+      <item><math|f<rsub|1,1>:z*<around*|(|u,v|)>=<around*|(|z*u,z*v|)>>
+
+      <math|f<rsub|1,2>:z*<around*|(|u,v|)>=<around*|(|z*u,<wide|z|\<bar\>>*v|)>>
+
+      <math|f<rsub|2,1>:z*<around*|(|u,v|)>=<around*|(|<wide|z|\<bar\>>*u,z*v|)>>
+
+      <math|f<rsub|2,2>:z*<around*|(|u,v|)>=<around*|(|z*u,z*v|)>>
+
+      <item>
+
+      <item>
+    </enumerate-alpha>
   </exercise>
 </body>
 
