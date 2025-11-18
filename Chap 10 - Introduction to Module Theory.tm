@@ -1,11 +1,11 @@
 <TeXmacs|2.1.4>
 
-<style|generic>
+<style|<tuple|generic|number-long-article>>
 
 <\body>
   <chapter*|10 Introduction to Module Theory>
 
-  <section*|10.1 Basic Definitions and Examples>
+  <section|Basic Definitions and Examples>
 
   <\exercise>
     \;
@@ -251,6 +251,164 @@
       <item>
     </enumerate-alpha>
   </exercise>
+
+  <section|Quotient Modules and Module Homomorphisms>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Let <math|\<varphi\>> be the <math|R>-module homomorphism:
+
+      <\enumerate-roman>
+        <item>For <math|\<forall\>x,y\<in\>Ker
+        \<varphi\>,\<forall\>r\<in\>R>,
+
+        <\equation*>
+          \<varphi\><around*|(|x+r*y|)>=\<varphi\><around*|(|x|)>+r*\<varphi\><around*|(|y|)>=0,x+r*y\<in\>Ker
+          \<varphi\>
+        </equation*>
+
+        <item>For <math|\<forall\>x,y\<in\>\<varphi\><around*|(|M|)>,\<forall\>r\<in\>R>,
+        suppose <math|x=\<varphi\><around*|(|a|)>,y=\<varphi\><around*|(|b|)>>,
+        now
+
+        <\equation*>
+          x+r*y=\<varphi\><around*|(|a|)>+r*\<varphi\><around*|(|b|)>=\<varphi\><around*|(|a+r*b|)>,x+r*y\<in\>\<varphi\><around*|(|M|)>
+        </equation*>
+
+        <htab|5mm><qed>
+      </enumerate-roman>
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Let <math|R=F<around*|[|x|]>,M=R,\<varphi\>:f<around*|(|x|)>\<longmapsto\>f<around*|(|x<rsup|2>|)>>.
+      We can easily check <math|\<varphi\>> is a group homomorphism. Now if
+      <math|\<varphi\>> is an <math|R>-module homomorphism,
+
+      <\equation*>
+        x<rsup|2>=\<varphi\><around*|(|x|)>=\<varphi\><around*|(|x*1|)>=x*\<varphi\><around*|(|1|)>=x
+      </equation*>
+
+      Contradictory.<htab|5mm><qed>
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\enumerate-roman>
+      <item>Trivial.
+
+      <item>Trivial.
+    </enumerate-roman>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      See <strong|Exercise 2.6.>
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\enumerate-roman>
+      <item>Trivial.
+
+      <item>Trivial.
+    </enumerate-roman>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+
+      Suppose <math|\<varphi\>\<in\>Hom<rsub|R><around*|(|R,M|)>>, just
+      consider the value of <math|\<varphi\><around*|(|1|)>\<in\>M> and
+      correspondence automatically derived.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\indent>
+      Trivial.
+    </indent>
+  </exercise>
+
+  <\exercise>
+    <verbatim|LATER>
+
+    <\indent>
+      need definition of <math|<wide|\<varphi\>|\<bar\>>> to solve, otherwise
+      (it's not well defined and)\ 
+
+      <\equation*>
+        <wide|\<varphi\>|\<bar\>>:M/I*M\<longrightarrow\>N/I*N,<wide|\<varphi\>|\<bar\>><around*|(|m+I*M|)>=\<varphi\><around*|(|m|)>+I*\<varphi\><around*|(|M|)>=\<varphi\><around*|(|m|)>+I*N?
+      </equation*>
+    </indent>
+  </exercise>
+
+  <\exercise>
+    \;
+
+    <\enumerate-alpha>
+      <item>Trivial.
+
+      <item>Trivial. It's not a ring homomorphism because
+      <math|\<varphi\><around*|(|x|)>*\<varphi\><around*|(|x<rsup|2>|)>=t<rsub|1>*t<rsub|2>,\<varphi\><around*|(|x*x<rsup|2>|)>=t<rsub|3>>.
+    </enumerate-alpha>
+  </exercise>
 </body>
 
 <\initial>
@@ -262,8 +420,10 @@
 
 <\references>
   <\collection>
+    <associate|2|<tuple|2.5|?>>
     <associate|auto-1|<tuple|?|1>>
-    <associate|auto-2|<tuple|?|1>>
+    <associate|auto-2|<tuple|1|1>>
+    <associate|auto-3|<tuple|2|2>>
   </collection>
 </references>
 
@@ -274,9 +434,13 @@
       Introduction to Module Theory> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10.1
-      Basic Definitions and Examples> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Basic
+      Definitions and Examples> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Quotient
+      Modules and Module Homomorphisms> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
